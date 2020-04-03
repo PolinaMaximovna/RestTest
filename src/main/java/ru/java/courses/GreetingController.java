@@ -15,9 +15,9 @@ public class GreetingController
     public String greeting(@RequestParam(name="name", required=false, defaultValue="World") String name,
                            Map<String, Object> model)
     {
-        System.out.println("11111");
+
         model.put("name", name);
-        System.out.println("fdsfdsf");
+        
         return "greeting";
     }
 
